@@ -59,6 +59,7 @@ if (int1 === 8) {
 } else {
   console.log(`hai sbagliato qualcosa`);
 }
+//era da fare con l`or || non con gli else if
 
 /* ESERCIZIO 5
   Stai lavorando su un sito di e-commerce. Stai salvando il saldo totale del carrello dell'utente in una variabile "totalShoppingCart".
@@ -67,12 +68,15 @@ if (int1 === 8) {
 */
 
 /* SCRIVI QUI LA TUA RISPOSTA */
-let totalShoppingCart = 120;
+const totalShoppingCart = 120;
 const costoSpedizione = 10;
+let total = 0;
 
 if (totalShoppingCart > 50) {
+  total = totalShoppingCart;
   console.log(`hai diritto alla spedizione gratuita`);
 } else {
+  total = totalShoppingCart + costoSpedizione;
   console.log(`la spedizione ha un costo di 10€ per ordini inferiori a 50€`);
 }
 
@@ -82,7 +86,7 @@ if (totalShoppingCart > 50) {
 */
 
 /* SCRIVI QUI LA TUA RISPOSTA */
-let totalShoppingCart1 = 120;
+const totalShoppingCart1 = 120;
 const costoSpedizione1 = 10;
 const sconto = 20;
 
@@ -90,8 +94,10 @@ let totaleScontato = totalShoppingCart1 * ((100 - sconto) / 100);
 console.log(totaleScontato);
 
 if (totalShoppingCart1 > 50) {
+  totaleScontato = totalShoppingCart1;
   console.log(`hai diritto alla spedizione gratuita`);
 } else {
+  totaleScontato = totalShoppingCart1 + costoSpedizione1;
   console.log(`la spedizione ha un costo di 10€ per ordini inferiori a 50€`);
 }
 
