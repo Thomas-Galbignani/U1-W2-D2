@@ -122,8 +122,10 @@ console.log(variValori);
 
 const valore = `ciao`;
 
+typeof valore;
+
 if (valore) {
-  console.log();
+  console.log(typeof valore);
 }
 
 /* ESERCIZIO 9
@@ -131,6 +133,13 @@ if (valore) {
 */
 
 /* SCRIVI QUI LA TUA RISPOSTA */
+const numeroD = 7;
+
+if (numeroD % 2 === 0) {
+  console.log(`pari`);
+} else {
+  console.log(`dispari`);
+}
 
 /* ESERCIZIO 10
   Modifica la logica del seguente algoritmo in modo che mostri in console il messaggio corretto in ogni circostanza.
@@ -145,6 +154,14 @@ if (valore) {
 */
 
 /* SCRIVI QUI LA TUA RISPOSTA */
+let val = 7;
+if (val < 10) {
+  console.log("Meno di 10");
+} else if (val < 5) {
+  console.log("Meno di 5");
+} else {
+  console.log("Uguale a 10 o maggiore");
+}
 
 /* ESERCIZIO 11
   Fornito il seguente oggetto, scrivi del codice per aggiungere una proprietà "city", il cui valore sarà "Toronto".
